@@ -1,0 +1,5 @@
+scapy
+opencv-python
+transformers
+torch
+pyyaml
