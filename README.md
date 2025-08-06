@@ -1,80 +1,83 @@
-````markdown
-# 🛡️ GuardianAI — AI-Powered Home Network Defense Assistant
+---
 
-## Overview
+# 🛡️ **GuardianAI**  
+**AI-Powered Home Network Defense Assistant**
 
-GuardianAI is a desktop application that helps monitor and protect your home network by scanning connected devices and open ports, analyzing logs with AI-powered classification, and detecting physical intrusions using your webcam. It combines cybersecurity fundamentals with AI and computer vision in a user-friendly GUI built with Tkinter.
+GuardianAI is a desktop application that monitors and protects your home network. It scans connected devices, analyzes logs with AI, and detects physical intrusions using your webcam. Built with **Tkinter**, it blends cybersecurity, AI, and computer vision into a user-friendly interface.
 
 ---
 
-## Features
+## 🚀 Features
 
-- **Network Scanner:** Detects devices on your local subnet with IP, MAC, hostname, and open ports.
-- **Log Management:** Save, view, and export scan logs in SQLite database.
-- **AI Classification:** Uses a lightweight AI model (via HuggingFace Transformers) to classify scan log severity and recommend actions.
-- **Rule-Based Evaluation:** Highlights suspicious devices or port activity based on customizable rules.
-- **Physical Intrusion Detection:** Uses your laptop webcam and OpenCV Haar cascades to detect human presence and alert you.
-- **Export:** Export logs to CSV or JSON for offline analysis.
-- **Intuitive GUI:** Built with Tkinter, includes start/stop controls for scanning and intrusion detection.
+| Category                  | Description                                                                 |
+|---------------------------|-----------------------------------------------------------------------------|
+| 🔍 **Network Scanner**     | Detects devices on your subnet with IP, MAC, hostname, and open ports       |
+| 📚 **Log Management**      | Saves and exports scan logs to a local SQLite database                      |
+| 🧠 **AI Classification**   | Uses Hugging Face Transformers to classify log severity and suggest actions |
+| ⚙️ **Rule-Based Evaluation**| Highlights suspicious activity based on customizable rules                  |
+| 🎥 **Intrusion Detection** | Uses webcam + OpenCV Haar cascades to detect human presence                 |
+| 📤 **Export Options**      | Export logs to CSV or JSON                                                  |
+| 🖥️ **Intuitive GUI**       | Tkinter-based interface with start/stop controls                           |
 
 ---
 
-## Installation
+## 🛠️ Installation
 
-### Prerequisites
+### ✅ Prerequisites
 
 - Python 3.10+
 - Webcam (for intrusion detection)
-- Windows/Linux/macOS
+- Compatible with Windows, Linux, macOS
 
-### Setup
+### 📦 Setup Instructions
 
-1. Clone the repo:
+#### 1. Clone the Repository
 
-   ```bash
-   git clone https://github.com/yourusername/GuardianAI.git
-   cd GuardianAI
-   ```
-````
+```bash
+git clone https://github.com/yourusername/GuardianAI.git
+cd GuardianAI
+```
 
-2. Create and activate a virtual environment (optional but recommended):
+#### 2. Create & Activate Virtual Environment (Recommended)
 
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # Linux/macOS
-   venv\Scripts\activate     # Windows
-   ```
+```bash
+python -m venv venv
+source venv/bin/activate  # Linux/macOS
+venv\Scripts\activate     # Windows
+```
 
-3. Install dependencies:
+#### 3. Install Dependencies
 
-   ```bash
-   pip install -r requirements.txt
-   ```
+```bash
+pip install -r requirements.txt
+```
 
-4. Ensure your webcam is connected for intrusion detection.
+#### 4. Connect Webcam
+
+Ensure your webcam is connected and functioning for intrusion detection.
 
 ---
 
-## Usage
+## ▶️ Usage
 
-Run the GUI app:
+Run the GUI application:
 
 ```bash
 python -m ui.gui
 ```
 
-### GUI Controls
+### 🖱️ GUI Controls
 
-- **Scan Network:** Scan your local network for connected devices.
-- **Save Logs:** Save the current scan data to the local database.
-- **Show Recent Logs:** Display recent scan logs.
-- **AI Classify Logs:** Analyze logs for severity and get recommendations.
-- **Start Intrusion Detection:** Enable webcam-based physical intrusion detection.
-- **Stop Intrusion Detection:** Disable the webcam feed and detection.
+- **Scan Network:** Discover connected devices
+- **Save Logs:** Store scan results in the database
+- **Show Recent Logs:** View previous scans
+- **AI Classify Logs:** Analyze severity and get recommendations
+- **Start Intrusion Detection:** Activate webcam-based monitoring
+- **Stop Intrusion Detection:** Disable webcam feed
 
 ---
 
-## Project Structure
+## 📁 Project Structure
 
 ```
 GuardianAI/
@@ -99,40 +102,40 @@ GuardianAI/
 
 ---
 
-## Dependencies
+## 📦 Dependencies
 
-- `scapy` – Network scanning
-- `opencv-python` – Webcam and computer vision
-- `tkinter` – GUI framework (comes with Python)
-- `transformers` – AI classification (HuggingFace)
-- `sqlite3` – Database (built-in)
-- `pyyaml` – Config management
+| Package           | Purpose                          |
+|-------------------|----------------------------------|
+| `scapy`           | Network scanning                 |
+| `opencv-python`   | Webcam & computer vision         |
+| `tkinter`         | GUI framework (built-in)         |
+| `transformers`    | AI classification (Hugging Face) |
+| `sqlite3`         | Local database (built-in)        |
+| `pyyaml`          | Config management                |
 
 ---
 
-## Notes
+## 📝 Notes
 
-- Run the app with sufficient permissions to perform network scans.
+- Run with sufficient permissions for network scanning.
 - Intrusion detection requires a working webcam.
-- AI model used is lightweight and intended for demonstration.
-- Logs and whitelist config stored locally.
+- AI model is lightweight and intended for demonstration.
+- Logs and whitelist config are stored locally.
 
 ---
 
-## License
+## 📄 License
 
-[MIT License](LICENSE)
+This project is licensed under the [MIT License](LICENSE).
 
 ---
 
-## Contact
+## 📬 Contact
 
-For questions or feedback, reach out to Ahmad Abughanam.
+For questions or feedback, reach out to **Ahmad Abughanam**.
 
 ---
 
 _Built with ❤️ by Ahmad — combining AI, cybersecurity, and lifestyle tech._
 
-```
-
-```
+---
